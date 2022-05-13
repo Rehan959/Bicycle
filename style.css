@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+#front>img {
+  max-width: 100%;
+  height: 105;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-resolution: revert;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #191919;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #191919;
+  border: 3px solid #FF4949;
+  border-radius: 10vw;
+}
+
+nav>a {
+  text-align: center;
+  color: white;
+}
+
+
+
+main header:nth-child(1) {
+  margin-left: 35rem;
+  font-size: 25px;
+  position: relative;
+}
+
+main header:nth-child(1) a {
+  font-family: 'Concert One', cursive;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F90716;
+  transform-origin: center;
+  transition: transform 0.40s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+
+#head {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  position: absolute;
+  top: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 10rem;
+}
+
+
+#join {
+  display: flex;
+}
+
+#head h1 {
+  font-size: 10rem;
+  padding: 2px;
+}
+
+#head p {
+  padding: 10px;
+  font-size: 30px;
+}
+
+
+@media screen and (max-width:810px) {
+  main header:nth-child(1) {
+    margin-left: 10rem;
+  }
+
+  #head h1 {
+    font-size: 5rem;
+    padding: 1px;
+  }
+
+  #head p {
+    padding: 6px;
+    font-size: 20px;
+  }
+}
