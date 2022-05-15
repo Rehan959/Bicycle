@@ -84,12 +84,9 @@ main header:nth-child(1) a {
   color: white;
   font-family: 'Quicksand', sans-serif;
   position: absolute;
-  top: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin-top: 5rem;
+  top: 8px;
+  left: 16px;
+  margin-top: 6rem;
 }
 
 
