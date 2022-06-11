@@ -6,24 +6,12 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-wrap: wrap;
   background-color: black;
 }
 
 * {
   margin: 0;
   padding: 0;
-}
-
-
-#front>img {
-  max-width: 100%;
-  height: 105;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  image-resolution: revert;
 }
 
 ::-webkit-scrollbar {
@@ -39,19 +27,38 @@ body {
   border-radius: 10vw;
 }
 
-nav>a {
-  text-align: center;
+ul {
+  display: flex;
+  width: 100%;
+}
+
+ul li a {
   color: white;
+  text-decoration: none;
+  padding: 10px;
 }
 
 
-
-main header:nth-child(1) {
-  margin-left: 40rem;
-  font-size: 1.5rem;
+#front {
+  background: url("./marc-noorman-htp5A-elyvY-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
 }
 
-main header:nth-child(1) a {
+header > nav {
+  display:grid;
+  width: 100vw;
+  height: 10vh;
+  place-items: center;
+}
+
+ header:nth-child(1) {
+  font-size: 1.3rem;
+}
+
+header:nth-child(1) a {
   font-family: 'Concert One', cursive;
 }
 
@@ -59,6 +66,10 @@ main header:nth-child(1) a {
   display: inline-block;
   position: relative;
   cursor: pointer;
+}
+
+ul li {
+  list-style: none;
 }
 
 .hover-underline-animation:after {
@@ -80,6 +91,8 @@ main header:nth-child(1) a {
 }
 
 
+
+
 #head {
   color: white;
   font-family: 'Quicksand', sans-serif;
@@ -88,6 +101,7 @@ main header:nth-child(1) a {
   left: 16px;
   margin-top: 6rem;
 }
+
 
 
 #join {
@@ -105,7 +119,7 @@ main header:nth-child(1) a {
 }
 
 
-@media screen and (max-width:810px) {
+@media screen and (max-width:570px) {
   main header:nth-child(1) {
     margin-left: 10rem;
   }
@@ -116,56 +130,89 @@ main header:nth-child(1) a {
   }
 
   #head p {
-    padding: 6px auto;
-    font-size: 20px;
+    margin: 8px;
+    font-size: 18px;
+    text-align: center;
   }
 }
 
-#design {
+
+#about {
   width: 100vw;
   height: 100vh;
   display: flex;
-  position: relative;
+  flex-wrap: wrap;
   align-items: center;
- padding: 10px;
-  position: relative;
+  justify-content: center;
 }
 
-
-#design div {
+#about_info {
   position: absolute;
-  justify-content: space-around;
+  bottom: 0;
+  right: 0;
+  z-index: 8;
+  padding: 20px;
+  border-radius: 0.5vw;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-color: white;
+  font-family: 'Quicksand', sans-serif;
 }
 
-#circle1 {
-  min-width: 40vw;
-  min-height: 40vw;
-  border-radius: 50%;
-  background-color: #42C2FF;
-  box-shadow: 0 0 50px #ccc;
+#about_img {
+  width: 40vw;
+  height: 90vh;
+  position: relative;
+  background: url('./WhatsApp\ Image\ 2022-05-16\ at\ 8.06.51\ AM\ \(2\).jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+#gallery {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-justify-content: space-around;
+  justify-content: center;
 }
 
-#circle2 {
-  width: 30vw;
-  height:30vw;
-  border-radius:50%;
-  background-color: #85F4FF;
-  box-shadow: 0 0 50px #ccc;
+#gallery div {
+  width: 400px;
+  height: 320px;
+  padding: 5px;
 }
 
-#circle3 {
-  width: 20vw;
-  height:20vw;
-  border-radius: 300px;
-  background-color: #B8FFF9;
-  box-shadow: 0 0 50px #ccc;
+#gallery div img {
+  width: 100%;
+  height: 100%;
+}
+
+#contact {
+  padding: 1px;
+  position: relative;
+}
+
+#feedback {
+  position: absolute;
+  width: 10vw;
+  top: 0;
+  right: 0;
+  margin-top: 20rem;
+  background-color: white;
+}
+
+#contact_img>iframe {
+  width: 100vw;
+  height: 100vh;
 }
 
 
+.sticky {
+  background: #fff;
+border-radius:6px;
+color: black;
+}
 
-#contact{
-  box-shadow: 0 0 50px #ccc;
+#nav_one{
+ width: 100vw;
 }
