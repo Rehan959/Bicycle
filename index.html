@@ -10,20 +10,17 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <script src="./main.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./card.css" />
     <title>Bicycle</title>
   </head>
   <body>
     <main id="front">
       <header>
-        <nav id="nav_one" style="position: fixed">
+        <nav id="nav_one">
           <ul>
             <li>
-              <a
-                href="/"
-                style="color: white"
-                class="hover-underline-animation"
+              <a href="/" style="color: white" class="hover-underline-animation"
                 >Home</a
               >
             </li>
@@ -44,17 +41,15 @@
               >
             </li>
             <li>
-              <a
-                href=""
-                style="color: white"
-                class="hover-underline-animation"
-                >Contact</a
+              <a href="#contact" style="color: white" class="hover-underline-animation"
+                >Address</a
               >
             </li>
           </ul>
         </nav>
       </header>
     </main>
+
     <div id="head">
       <h1>
         Bicycle
@@ -63,55 +58,79 @@
           <h1>pair</h1>
         </div>
       </h1>
-      <p class="mb-8 leading-relaxed">
         We don't just want you to love riding your bike,<br />
         We are here to help you.
+        <br>
+        Address:Neeladri nagar,Opposite Sai Baba Temple
+        <br>
+        Phone.no:+91 85532 66786
       </p>
     </div>
     <div id="about">
-      <div id="about_img">
-        <div id="about_info">
-          <h1>Name:Saif</h1>
-          <p>Owner of the shop.<br> Shop closed only on friday</p>
+      <div class="card">
+        <div class="card-content">
+          <h1 class="card-title">Name:Saif</h1>
+          <p class="card-body">
+            Phone.no:+91 85532 66786
+            <br />
+            Owner of the shop.
+          </p>
+          <a href="#contact" class="button">Address</a>
         </div>
       </div>
     </div>
 
     <div id="gallery">
       <div>
-        <img src="./gallery/dan-gold-_BaWRZMLq8I-unsplash.jpg">
+        <img src="./gallery/dan-gold-_BaWRZMLq8I-unsplash.jpg" />
       </div>
       <div>
-        <img src="./gallery/dmitrii-vaccinium-sw9Vozf6j_4-unsplash.jpg">
+        <img src="./gallery/dmitrii-vaccinium-sw9Vozf6j_4-unsplash.jpg" />
       </div>
       <div>
-        <img src="./gallery/febiyan-X_yJiPzo32E-unsplash.jpg">
+        <img src="./gallery/febiyan-X_yJiPzo32E-unsplash.jpg" />
       </div>
       <div>
-        <img src="./gallery/marianna-lutkova-4PSLAKVQQ88-unsplash.jpg">
+        <img src="./gallery/marianna-lutkova-4PSLAKVQQ88-unsplash.jpg" />
       </div>
       <div>
-        <img src="./gallery/patrick-hendry-1ow9zrlldJU-unsplash.jpg">
+        <img src="./gallery/patrick-hendry-1ow9zrlldJU-unsplash.jpg" />
       </div>
       <div>
-        <img src="./gallery/robert-bye-tG36rvCeqng-unsplash.jpg"> 
+        <img src="./gallery/robert-bye-tG36rvCeqng-unsplash.jpg" />
       </div>
       <div>
-        <img src="./gallery/stesson-bezuidenhout-MabODzq9TIc-unsplash.jpg" alt="">
+        <img
+          src="./gallery/stesson-bezuidenhout-MabODzq9TIc-unsplash.jpg"
+          alt=""
+        />
       </div>
       <div>
-        <img src="./gallery/oleksii-khodakivskiy-WUOq1_Vh5us-unsplash.jpg" alt="">
+        <img
+          src="./gallery/oleksii-khodakivskiy-WUOq1_Vh5us-unsplash.jpg"
+          alt=""
+        />
       </div>
-      <div><img src="./gallery/patrick-hendry-1ow9zrlldJU-unsplash.jpg"></div>
+      <div><img src="./gallery/patrick-hendry-1ow9zrlldJU-unsplash.jpg" /></div>
     </div>
-     
+
     <div id="contact">
       <div id="contact_img">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.0763585059112!2d77.6418339146437!3d12.838342190943383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6bc6173b9fef%3A0x46ddbb0886641c2e!2sAMS%20Cycle%20World!5e0!3m2!1sen!2sin!4v1653072264871!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.0763585059112!2d77.6418339146437!3d12.838342190943383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6bc6173b9fef%3A0x46ddbb0886641c2e!2sAMS%20Cycle%20World!5e0!3m2!1sen!2sin!4v1653072264871!5m2!1sen!2sin"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
-      <br>
-      <div id="feedback">
-      </div>
-      </div>
-    </body>
+      <br />
+      <div id="feedback"></div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

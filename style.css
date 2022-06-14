@@ -39,6 +39,7 @@ ul li a {
 }
 
 
+
 #front {
   background: url("./marc-noorman-htp5A-elyvY-unsplash.jpg");
   background-repeat: no-repeat;
@@ -47,15 +48,40 @@ ul li a {
   width: 100%;
 }
 
-header > nav {
-  display:grid;
+header {
+  top: 0;
+  left: 0;
   width: 100vw;
-  height: 10vh;
-  place-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
 }
 
- header:nth-child(1) {
-  font-size: 1.3rem;
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  position: relative;
+}
+
+header ul li a {
+  position: realtive;
+  margin: 0 15px;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+header:nth-child(1) {
+  position: relative;
+  font-size: 1.6rem;
+  transition: 0.6s;
 }
 
 header:nth-child(1) a {
@@ -120,8 +146,9 @@ ul li {
 
 
 @media screen and (max-width:570px) {
-  main header:nth-child(1) {
-    margin-left: 10rem;
+
+  nav {
+    display: none;
   }
 
   #head h1 {
@@ -138,36 +165,10 @@ ul li {
 
 
 #about {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
 }
 
-#about_info {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 8;
-  padding: 20px;
-  border-radius: 0.5vw;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  background-color: white;
-  font-family: 'Quicksand', sans-serif;
-}
-
-#about_img {
-  width: 40vw;
-  height: 90vh;
-  position: relative;
-  background: url('./WhatsApp\ Image\ 2022-05-16\ at\ 8.06.51\ AM\ \(2\).jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 15px;
-}
 
 #gallery {
   display: flex;
@@ -188,7 +189,7 @@ ul li {
 }
 
 #contact {
-  padding: 1px;
+  padding: 10px;
   position: relative;
 }
 
@@ -207,12 +208,6 @@ ul li {
 }
 
 
-.sticky {
-  background: #fff;
-border-radius:6px;
-color: black;
-}
-
-#nav_one{
- width: 100vw;
+#nav_one {
+  width: 100vw;
 }
